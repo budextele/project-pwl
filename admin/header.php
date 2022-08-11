@@ -27,7 +27,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="index.php">LAUNDRY XXX</a>
+				<a class="navbar-brand" href="index.php">LAUNDRY ABC</a>
 			</div>
 			
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -44,6 +44,9 @@
 						</ul>
 					</li>
 					<li><a href="logout.php"><i class="glyphicon glyphicon-log-out"></i> Log Out</a></li>
+					<!-- make link to profile -->
+					<li><a href="profile.php"><i class="glyphicon glyphicon-user"></i> Profile</a></li>
+					<!-- <li><a href="profil.php"><i class="glyphicon glyphicon-profil"></i>Profil</a></li> -->
 				</ul>				
 				<ul class="nav navbar-nav navbar-right">
 					<li><p class="navbar-text">Halo, <b><?php echo $_SESSION['username']; ?></b> !</p></li>					
