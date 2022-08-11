@@ -9,7 +9,7 @@ $hp = $_POST['hp'];
 $alamat = $_POST['alamat'];
 
 // input data ke tabel pelanggan
-mysqli_query($koneksi,"insert into pelanggan values('','$nama','$hp','$alamat')");
+mysqli_query($koneksi,"insert into pelanggan (pelanggan_nama, pelanggan_hp, pelanggan_alamat) values('','$nama','$hp','$alamat')");
 
 header("location:pelanggan.php");
 
