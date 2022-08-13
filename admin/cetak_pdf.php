@@ -8,10 +8,10 @@ include '../koneksi.php';
 $html = '<!DOCTYPE html>';
 $html .= '<html>';
 $html .= '<head>';
-$html .='	<title>Sistem Informasi Laundry Malas Ngoding - WWW.MALASNGODING.COM</title>';
+$html .='	<title>Sistem Informasi Laundry "ABC"</title>';
 $html .= '</head>';
 $html .= '<body>';
-$html .= '<center><h2>LAUNDRY " Malas Ngoding "</h2></center>';
+$html .= '<center><h2>LAUNDRY " ABC "</h2></center>';
 
 $dari = $_GET['dari'];
 $sampai = $_GET['sampai'];
