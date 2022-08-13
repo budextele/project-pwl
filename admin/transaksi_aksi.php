@@ -19,7 +19,7 @@ $harga = $berat * $harga_per_kilo['harga_per_kilo'];
 
 
 // input data ke tabel transaksi
-mysqli_query($koneksi,"insert into transaksi values('','$tgl_hari_ini','$pelanggan','$harga','$berat','$tgl_selesai','$status')");
+mysqli_query($koneksi,"insert into transaksi (transaksi_tgl, transaksi_pelanggan, transaksi_harga, transaksi_berat, transaksi_tgl_selesai, transaksi_status) values('$tgl_hari_ini','$pelanggan','$harga','$berat','$tgl_selesai','$status')");
 
 // menyimpan id dari data yang di simpan pada query insert data sebelumnya
 $id_terakhir = mysqli_insert_id($koneksi);
