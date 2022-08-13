@@ -1,13 +1,14 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 4.9.7
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Waktu pembuatan: 24 Jul 2022 pada 16.08
--- Versi server: 10.4.22-MariaDB
--- Versi PHP: 7.4.27
+-- Host: localhost:3306
+-- Waktu pembuatan: 13 Agu 2022 pada 20.52
+-- Versi server: 10.3.35-MariaDB
+-- Versi PHP: 7.4.30
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -18,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `laundry`
+-- Database: `bcgwqowk_laundry`
 --
 
 -- --------------------------------------------------------
@@ -83,6 +84,15 @@ CREATE TABLE `pelanggan` (
   `pelanggan_alamat` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data untuk tabel `pelanggan`
+--
+
+INSERT INTO `pelanggan` (`pelanggan_id`, `pelanggan_nama`, `pelanggan_hp`, `pelanggan_alamat`) VALUES
+(1, 'wahyu', '89912345678', 'bekasi'),
+(4, 'Adit', '08814951920', 'Jakarta'),
+(5, 'Ardli', '0812345678', 'Bekasi');
+
 -- --------------------------------------------------------
 
 --
@@ -119,7 +129,8 @@ ALTER TABLE `pakaian`
 -- Indeks untuk tabel `pelanggan`
 --
 ALTER TABLE `pelanggan`
-  ADD PRIMARY KEY (`pelanggan_id`);
+  ADD PRIMARY KEY (`pelanggan_id`),
+  ADD UNIQUE KEY `pelanggan_id` (`pelanggan_id`);
 
 --
 -- Indeks untuk tabel `transaksi`
@@ -147,7 +158,7 @@ ALTER TABLE `pakaian`
 -- AUTO_INCREMENT untuk tabel `pelanggan`
 --
 ALTER TABLE `pelanggan`
-  MODIFY `pelanggan_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `pelanggan_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT untuk tabel `transaksi`
