@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Sistem Informasi Laundry Malas Ngoding - WWW.MALASNGODING.COM</title>
+	<title>Sistem Informasi Laundry ABC</title>
 
 	<link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.css">
 	<script type="text/javascript" src="../assets/js/jquery.js"></script>
@@ -24,7 +24,7 @@
 	?>
 	<div class="container">
 
-		<center><h2>LAUNDRY " Malas Ngoding "</h2></center>
+		<center><h2>LAUNDRY " ABC "</h2></center>
 		<br/>
 		<br/>
 		<?php 
