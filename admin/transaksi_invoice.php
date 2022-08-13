@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Sistem Informasi Laundry Malas Ngoding - WWW.MALASNGODING.COM</title>
+	<title>Sistem Informasi Laundry ABC
+	</title>
 
 	<link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.css">
 	<script type="text/javascript" src="../assets/js/jquery.js"></script>
@@ -30,10 +31,10 @@
 			$id = $_GET['id'];
 
 			// megambil data pelanggan yang ber id di atas dari tabel pelanggan
-			$transaksi = mysqli_query($koneksi,"select * from transaksi,pelanggan where transaksi_id='$id' and transaksi_pelanggan=pelanggan_id");
+			$transaksi = mysqli_query($koneksi,"select * from transaksi, pelanggan where transaksi_id='$id' and transaksi_pelanggan=pelanggan_id");
 			while($t=mysqli_fetch_array($transaksi)){
 				?>
-				<center><h2>LAUNDRY " Malas Ngoding "</h2></center>
+				<center><h2>LAUNDRY ABC</h2></center>
 				<h3></h3>
 
 				<a href="transaksi_invoice_cetak.php?id=<?php echo $id; ?>" target="_blank" class="btn btn-primary pull-right"><i class="glyphicon glyphicon-print"></i> CETAK</a>

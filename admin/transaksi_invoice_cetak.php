@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Sistem Informasi Laundry Malas Ngoding - WWW.MALASNGODING.COM</title>
+<title>Sistem Informasi Laundry ABC</title>
 
 <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.css">
 <script type="text/javascript" src="../assets/js/jquery.js"></script>
@@ -33,7 +33,7 @@ include '../koneksi.php';
 		$transaksi = mysqli_query($koneksi,"select * from transaksi,pelanggan where transaksi_id='$id' and transaksi_pelanggan=pelanggan_id");
 		while($t=mysqli_fetch_array($transaksi)){
 			?>
-			<center><h2>LAUNDRY " Malas Ngoding "</h2></center>
+			<center><h2>LAUNDRY ABC</h2></center>
 			<h3>INVOICE-<?php echo $t['transaksi_id']; ?></h3>
 
 			

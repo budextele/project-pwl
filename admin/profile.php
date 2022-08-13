@@ -3,24 +3,18 @@
 <!-- user page -->
 <!--//make user profile page html -->
 <div class="container">
-	<?php 
-		if(isset($_GET['pesan'])){
-			if($_GET['pesan'] == "oke"){
-				echo "<div class='alert alert-success'>Profile telah diganti!</div>";
-			}
-		}
-	?>	
+	
     <div class="row">
         <div class="col-md-3">
             <div class="panel panel-default">
 				<form action="ganti_password_aksi.php" method="post">
 					<div class="panel-body">
 						<center>
-							<img src="../assets/img/user.png" class="img-responsive img-circle" style="width: 100px; height: 100px;">
+							<img src="download.php" class="img-responsive" style="width: 200px;">
 							<h3><?php echo $_SESSION['username']; ?></h3>
 						
 						<br/>
-						<input type="submit" class="btn btn-primary" value="Ubah Foto">	
+						<a href="imageUploadForm.php" class="btn btn-primary">ubah foto</a>
 						</center>
 					</div>
 				</form>
