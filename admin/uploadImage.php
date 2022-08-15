@@ -1,6 +1,8 @@
 <?php 
 // Include the database configuration file  
 require_once '../koneksi.php'; 
+
+$id = $_GET['id'];
  
 $image = $_FILES['image'];
 $info = getimagesize($image['tmp_name']);
@@ -13,7 +15,7 @@ $blob = addslashes(file_get_contents($image['tmp_name']));
 
 // $sql = "UPDATE admin SET (foto, foto_tipe, foto_nama) VALUES ('$blob', '$type', '$name') WHERE id=1";
 // $sql = "UPDATE admin SET foto='$blob', foto_tipe='$type', foto_nama='$name' WHERE id=1";
-$sql = "UPDATE admin SET foto='$blob', foto_tipe='$type', foto_nama='$name' WHERE username='$_SESSION[username]'";
+$sql = "UPDATE admin SET foto='$blob', foto_tipe='$type', foto_nama='$name' WHERE id=$id";
 if(mysqli_query($koneksi, $sql)){
     echo "<script>alert('File berhasil diupload');</script>";
     //delay redirect
