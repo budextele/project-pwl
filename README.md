@@ -12,7 +12,14 @@ lihat folder DATABASE DLL
     #copy paste file ke directori instal git /etc (biasanya di c:\ProgramFile\Git\etc)
 
 
-    #alamat aplikasi yg sudah dihosting
-    #http://budiutomo.site/laundry/
+    #alamat aplikasi yg sudah dihosting#
+    http://budiutomo.site/laundry/
     #default user = admin
     #default password = admin123
+    
+    #video presentasi#
+    https://youtu.be/88GiDmXgFw4
+    
+    #repo git#
+    https://github.com/budextele/project-pwl/tree/budi1
+    #branch budi1
